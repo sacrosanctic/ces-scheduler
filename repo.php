@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>repo</title>
+		<title>Repo</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="">
 		<meta name="author" content="">
@@ -40,7 +40,36 @@
 			</div>
 		</div>
 		<div class="container">
-		scott was here.
+			<h1>Welcome</h1>
+		
+?>
+			<table class="table table-striped">
+				<caption>Feburary 18th</caption>
+				<thead>
+					<tr>
+						<th>Student</th>
+						<th>Teacher</th>
+						<th>Time</th>
+						<th>Length</th>
+						<th>Status</th>
+						<th>Room</th>
+						<th>Edit</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Scott</td>
+						<td>Daphne</td>
+						<td>4:00pm</td>
+						<td>2 hours</td>
+						<td>pending</td>
+						<td>2d</td>
+						<td><a href="#"><i class="icon-pencil"></i></a></td>
+					</tr>
+				</tbody>
+			</table>
+<?php
+	
 		</div> <!-- /container -->
 		<script src="js/jquery.js"></script>
 		<script src="bootstrap/js/bootstrap.js"></script>

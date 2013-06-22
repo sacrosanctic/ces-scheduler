@@ -1,5 +1,5 @@
 <?php
-	$title = 'Repo';
+	$title = 'Index';
 	$heading = 'Welcome';
 	$content = '
 ?>

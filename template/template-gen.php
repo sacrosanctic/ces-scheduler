@@ -1,22 +1,38 @@
 <?php
+	echo "Starting Template Gen...<br />\n";
 	
-	$template = "template.php";
-	$fill = "repo.php";
+	$template = file_get_contents("template.php");
+	$content_folder = "./";
 
-	//get template
-	$template = file_get_contents($template);
-	require_once("t-" . $fill);
+	function find_content($var)
+	{
+		return (substr($var,0,2) == "t-" ? true : false);
+	}
 
-	//translate placeholder
-	$trans = array(
-		"{{TITLE}}" => $title,
-		"{{CONTENT}}" => $content
-	);
+	echo "Loading up content files...<br />\n";
+	//find all files that start with t-
+	$content_list = array_values(array_filter(scandir($content_folder), "find_content"));
 
-	//replace placeholder
-	$content = strtr($template, $trans);
+	//generate each php file
+	for($i=0;$i<count($content_list);$i++)
+	{
+		include($content_list[$i]);
+		//translate placeholder
+		$trans = array(
+			"{{TITLE}}" => $title,
+			"{{CONTENT}}" => $content,
+			"{{HEADING}}" => $heading
+		);
+
+		//replace placeholder
+		$content = strtr($template, $trans);
+		
+		echo "Creating " . substr($content_list[$i],2) . "...<br />\n";
+		$fp = fopen("../" . substr($content_list[$i],2),"w");
+		fwrite($fp,$content);
+		fclose($fp);
+	}
+	echo "Template Gen Complete<br />\n";
+	echo "Total of $i files generated.<br />\n";
 	
-	$fp = fopen("../" . $fill,"w");
-	fwrite($fp,$content);
-	fclose($fp);
 ?>
