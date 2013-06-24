@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Repo</title>
+		<title>Teacher</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="">
 		<meta name="author" content="">
@@ -40,34 +40,58 @@
 			</div>
 		</div>
 		<div class="container">
-			<h1>Welcome</h1>
-		
-			<table class="table table-striped">
-				<caption>Feburary 18th</caption>
-				<thead>
-					<tr>
-						<th>Student</th>
-						<th>Teacher</th>
-						<th>Time</th>
-						<th>Length</th>
-						<th>Status</th>
-						<th>Room</th>
-						<th>Edit</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>Scott</td>
-						<td>Daphne</td>
-						<td>4:00pm</td>
-						<td>2 hours</td>
-						<td>pending</td>
-						<td>2d</td>
-						<td><a href="#"><i class="icon-pencil"></i></a></td>
-					</tr>
-				</tbody>
-			</table>
-	
+			<h1>Teacher</h1>
+			
+			<div class="row show-grid">
+				<form id="teacherform" action="/ces-scheduler/template/template-gen.php" method="post"> 
+					<fieldset>
+						<legend>Daphne</legend>
+						<label class="span2" for="FirstName">First Name</label>
+						<input type="text" name="FirstName" /> 
+						<input type="email" /> 
+						<div class="form-actions">
+						<button type="submit" class="btn" id="submitbutton">Save</button>
+						</div>
+					</fieldset>
+				</form>
+			</div>
+			<div class="row show-grid">
+				<div class="span6">
+					<table class="table">
+						<caption>Fees</caption>
+						<thead>
+							<tr>
+								<th>Class</th>
+								<th>Fee per hour</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Trumpet Class</td>
+								<td>400NT</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="span6">
+					<table class="table">
+						<caption>Fees</caption>
+						<thead>
+							<tr>
+								<th>Class</th>
+								<th>Fee per hour</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Trumpet Class</td>
+								<td>400NT</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			
 		</div> <!-- /container -->
 		<script src="js/jquery.js"></script>
 		<script src="bootstrap/js/bootstrap.js"></script>

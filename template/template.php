@@ -41,7 +41,7 @@
 		</div>
 		<div class="container">
 			<h1>{{HEADING}}</h1>
-		{{CONTENT}}
+			{{CONTENT}}
 		</div> <!-- /container -->
 		<script src="js/jquery.js"></script>
 		<script src="bootstrap/js/bootstrap.js"></script>

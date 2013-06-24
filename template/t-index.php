@@ -2,7 +2,6 @@
 	$title = 'Index';
 	$heading = 'Welcome';
 	$content = '
-?>
 			<table class="table table-striped">
 				<caption>Feburary 18th</caption>
 				<thead>
@@ -28,6 +27,5 @@
 					</tr>
 				</tbody>
 			</table>
-<?php
 	';
 ?>

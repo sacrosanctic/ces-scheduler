@@ -41,8 +41,7 @@
 		</div>
 		<div class="container">
 			<h1>Welcome</h1>
-		
-?>
+			
 			<table class="table table-striped">
 				<caption>Feburary 18th</caption>
 				<thead>
@@ -68,7 +67,6 @@
 					</tr>
 				</tbody>
 			</table>
-<?php
 	
 		</div> <!-- /container -->
 		<script src="js/jquery.js"></script>
