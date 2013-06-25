@@ -1,0 +1,56 @@
+#reference for recofiguring everything for chinese character set (UTF-8)
+
+##########
+#html
+##########
+<meta charset="UTF-8">
+
+##########
+#.htaccess/http.conf
+##########
+AddDefaultCharset UTF-8
+
+##########
+#mysql
+##########
+#database/table/column
+set collation to utf8 unicode ci
+
+##########
+#php header
+##########
+header('Content-type: application/json; charset=utf-8');
+header('Content-type: html/text; charset=utf-8');
+
+#php
+#Database initialization
+define('HOSTNAME','localhost');
+define('USERNAME','database_username');
+define('PASSWORD','database_password');
+define('DATABASE','database_name');
+$con = mysql_connect(HOSTNAME,USERNAME,PASSWORD);
+mysql_query("SET character_set_results=utf8",$con);
+mb_language('uni');
+mb_internal_encoding('UTF-8');
+mysql_select_db(DATABASE,$con);
+mysql_query("set names 'utf8'",$con);
+
+#Database Insert
+mysql_query("SET character_set_client=utf8",$con);
+mysql_query("SET character_set_connection=utf8",$con);
+$sql = "INSERT INTO...";
+mysql_query($sql,$con);
+
+#Database Update
+mysql_query("SET character_set_client=utf8",$con);
+mysql_query("SET character_set_connection=utf8",$con);
+$sql = "UPDATE...";
+mysql_query($sql,$con);
+
+#Database Select
+mysql_query("SET character_set_results=utf8",$con);
+$sql = "SELECT...";
+$result = mysql_query($sql,$con);
+
+#php http referer
+$_SERVER["HTTP_REFERER"];

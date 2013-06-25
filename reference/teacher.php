@@ -1,17 +1,19 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
 		<title>Teacher</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
 		<!-- Le styles -->
-		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
 		<style>
 		body {
 			padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
 		}
 		</style>
-		<link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+		<link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
 		<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 		<!--[if lt IE 9]>
 		<script src="bootstrap/js/html5shiv.js"></script>
@@ -29,18 +31,16 @@
 					<a class="brand" href="#">CES Scheduler</a>
 					<div class="nav-collapse collapse">
 						<ul class="nav">
-							<li><a href="index.php">Home</a></li>
-							<li><a href="#">Student</a></li>
-							<li><a href="teacher.php">Teacher</a></li>
-							<li><a href="#">Settings</a></li>
+							<li class="active"><a href="#">Home</a></li>
+							<li><a href="#about">About</a></li>
+							<li><a href="#contact">Contact</a></li>
 						</ul>
 					</div><!--/.nav-collapse -->
 				</div>
 			</div>
 		</div>
-		<div class="container"> <!-- container -->
-			
-			<h1>Teacher <small><a href="teacheredit.php">Edit</a></small></h1>
+		<div class="container">
+			<h1>Teacher <small><a href="#">Edit</a></small></h1>
 			<div class="row">
 				<form id="teacherform" action="" method="post" autocomplete="off"> 
 					<fieldset>
@@ -99,10 +99,11 @@
 					</fieldset>
 				</form>
 			</div>
+			<div class="row">
+			</div>
 			
 		</div> <!-- /container -->
-		<script src="js/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script></script>
+		<script src="js/jquery.js"></script>
+		<script src="bootstrap/js/bootstrap.js"></script>
 	</body>
 </html>
