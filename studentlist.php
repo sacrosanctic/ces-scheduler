@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Index</title>
+		<title>Student List</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- Le styles -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
@@ -53,11 +53,36 @@
 		</div>
 		<div class="container"> <!-- container -->
 			
-		<h1>Welcome</h1>
-	
+			<h1>Student List</h1>
+			<div class="row">
+				<div class="span12">
+					<form class="form-inline" action="student.php">
+						<div class="input-append">
+							<input type="text" id="typeahead" autocomplete="off" class="span3">
+							<a href="#" class="btn"><i class="icon-pencil"></i>Edit</a>
+						</div>
+						<a href="#" class="btn"><i class="icon-user"></i> <strong>New</strong></a>
+					</form>
+				</div>
+			</div>
+			
 		</div> <!-- /container -->
 		<script src="js/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
-		<script></script>
+		<script>
+		$(document).ready(function() { 
+			$("#typeahead").typeahead ({
+				source: function (query, process) {
+					return $.getJSON(
+						"name.json",
+						{ query: query},
+						function (data) {
+							return process(data);
+						}
+					);
+				}
+			});
+		}); 
+	</script>
 	</body>
 </html>

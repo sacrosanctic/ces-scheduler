@@ -27,6 +27,6 @@
 		die('Error: ' . mysql_error());
 	}
 
-	header('Content-type: application/json; charset=utf-8');
+	header('Content-type: application/json');
 	echo json_encode($json);
 ?>

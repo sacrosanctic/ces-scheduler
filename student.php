@@ -1,19 +1,17 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Teacher</title>
+		<title>Student</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="">
-		<meta name="author" content="">
 		<!-- Le styles -->
-		<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<style>
 		body {
 			padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
 		}
 		</style>
-		<link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+		<link href="css/bootstrap-responsive.min.css" rel="stylesheet">
 		<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 		<!--[if lt IE 9]>
 		<script src="bootstrap/js/html5shiv.js"></script>
@@ -31,21 +29,36 @@
 					<a class="brand" href="#">CES Scheduler</a>
 					<div class="nav-collapse collapse">
 						<ul class="nav">
-							<li class="active"><a href="#">Home</a></li>
-							<li><a href="#about">About</a></li>
-							<li><a href="#contact">Contact</a></li>
+							<li><a href="index.php">Home</a></li>
+							<li><a href="studentlist.php">Student</a></li>
+							<li><a href="teacherlist.php">Teacher</a></li>
+							<li><a href="checkin.php">Check-In</a></li>
+							<li class="dropdown">
+								<a href="#" id="dLabel" class="dropdown-toggle" role="button" data-toggle="dropdown">
+									Report
+									<b class="caret"></b>
+								</a>
+								<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+									<li role="presentation"><a href="finance.php">Finance Report</a></li>
+									<li role="presentation"><a href="bookkeep.php">Monthly Bookkeeping</a></li>
+								</ul>
+							</li>
+						</ul>
+						<ul class="nav pull-right">
+							<li><a href="#">Settings</a></li>
 						</ul>
 					</div><!--/.nav-collapse -->
 				</div>
 			</div>
 		</div>
-		<div class="container">
-			<h1>Teacher <small><a href="#">Edit</a></small></h1>
+		<div class="container"> <!-- container -->
+			
+			<h1>Student <small><a href="teacheredit.php">Edit</a></small></h1>
 			<div class="row">
 				<form id="teacherform" action="" method="post" autocomplete="off"> 
 					<fieldset>
 						<div class="span12">
-							<legend>Daphne</legend>
+							<legend>Scott</legend>
 						</div>
 						<div class="span6">
 							<table class="table table-bordered">
@@ -87,23 +100,42 @@
 							</table>
 						</div>
 						<div class="span6">
-							<h5>Education</h6>
+							<h5>Birthday</h6>
 							<p>
-								嘽 駍駔鳿 妎岓岕 疶砳, 蝺 箛箙舕 籿紁羑 韰頯餩 鰩鷎 圢帄氕 煘煓瑐 熩熝犚 躎轛 壿 藚藦藞 蜦賕踃 豅鑢鑗 垌壴 蒛 豥 湴涬 蛶觢豥 瀁瀎瀊 溹溦滜, 筡絼綒 鳻嶬幧 獫瘯皻 魦魵 滆 虰豖阹 忷扴汥 慛慖 滈, 巠帎 鳱 偢偣唲 秎穾籺 沎牣 胾臷菨 樛槷殦 姌弣抶 塝, 嘽 楋歅 莃荶衒 蛚袲褁 鈁陾靰
+								Feb 12th, 1990
 							</p>
-							<h5>Work History</h6>
+							<h5>Gender</h6>
 							<p>
-								嘽 駍駔鳿 妎岓岕 疶砳, 蝺 箛箙舕 籿紁羑 韰頯餩 鰩鷎 圢帄氕 煘煓瑐 熩熝犚 躎轛 壿 藚藦藞 蜦賕踃 豅鑢鑗 垌壴 蒛 豥 湴涬 蛶觢豥 瀁瀎瀊 溹溦滜, 筡絼綒 鳻嶬幧 獫瘯皻 魦魵 滆 虰豖阹 忷扴汥 慛慖 滈, 巠帎 鳱 偢偣唲 秎穾籺 沎牣 胾臷菨 樛槷殦 姌弣抶 塝, 嘽 楋歅 莃荶衒 蛚袲褁 鈁陾靰
+								Male
+							</p>
+							<h5>School</h6>
+							<p>
+								Puli elementary
+							</p>
+							<h5>student Number</h6>
+							<p>
+								0000000000000
+							</p>
+							<h5>id</h6>
+							<p>
+								0000000000000
+							</p>
+							<h5>carecard</h6>
+							<p>
+								0000000000000
+							</p>
+							<h5>application date</h6>
+							<p>
+								0000000000000
 							</p>
 						</div>
 					</fieldset>
 				</form>
 			</div>
-			<div class="row">
-			</div>
 			
 		</div> <!-- /container -->
-		<script src="js/jquery.js"></script>
-		<script src="bootstrap/js/bootstrap.js"></script>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script></script>
 	</body>
 </html>

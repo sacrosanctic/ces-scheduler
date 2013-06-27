@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Index</title>
+		<title>Book Keep</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- Le styles -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
@@ -53,8 +53,74 @@
 		</div>
 		<div class="container"> <!-- container -->
 			
-		<h1>Welcome</h1>
-	
+			<h1>Book Keep</h1>
+			<form class="form-inline">
+				<input type="date" value="2013-07-11"> to
+				<input type="date" value="2013-08-10">
+				<button type="submit" class="btn btn-primary">Add</button>
+			</form>
+			<div class="well">
+			<table class="table">
+				<thead>
+					<tr>
+						<th style="width:100px;"></th>
+						<th>Start Date</th>
+						<th>End Date</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<a href="#">View</a> | 
+							<a href="#">Change</a>
+						</td>
+						<td>Jan 11th, 2013</td>
+						<td>Feb 10th, 2013</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="#">View</a> | 
+							<a href="#">Change</a>
+						</td>
+						<td>Feb 11th, 2013</td>
+						<td>Mar 10th, 2013</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="#">View</a> | 
+							<a href="#">Change</a>
+						</td>
+						<td>Mar 11th, 2013</td>
+						<td>Apr 9th, 2013</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="#">View</a> | 
+							<a href="#">Change</a>
+						</td>
+						<td>Apr 10th, 2013</td>
+						<td>May 10th, 2013</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="#">View</a> | 
+							<a href="#">Change</a>
+						</td>
+						<td>May 11th, 2013</td>
+						<td>June 10th, 2013</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="#">View</a> | 
+							<a href="#">Change</a>
+						</td>
+						<td>June 11th, 2013</td>
+						<td>July 10th, 2013</td>
+					</tr>
+				</tbody>
+			</table>
+			</div>
+			
 		</div> <!-- /container -->
 		<script src="js/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>

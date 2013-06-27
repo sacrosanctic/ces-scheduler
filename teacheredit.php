@@ -30,8 +30,21 @@
 					<div class="nav-collapse collapse">
 						<ul class="nav">
 							<li><a href="index.php">Home</a></li>
-							<li><a href="#">Student</a></li>
-							<li><a href="teacher.php">Teacher</a></li>
+							<li><a href="studentlist.php">Student</a></li>
+							<li><a href="teacherlist.php">Teacher</a></li>
+							<li><a href="checkin.php">Check-In</a></li>
+							<li class="dropdown">
+								<a href="#" id="dLabel" class="dropdown-toggle" role="button" data-toggle="dropdown">
+									Report
+									<b class="caret"></b>
+								</a>
+								<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+									<li role="presentation"><a href="finance.php">Finance Report</a></li>
+									<li role="presentation"><a href="bookkeep.php">Monthly Bookkeeping</a></li>
+								</ul>
+							</li>
+						</ul>
+						<ul class="nav pull-right">
 							<li><a href="#">Settings</a></li>
 						</ul>
 					</div><!--/.nav-collapse -->
@@ -59,6 +72,9 @@
 								<label>Work History</label>
 								<textarea rows="4" class="span8">嘽 駍駔鳿 妎岓岕 疶砳, 蝺 箛箙舕 籿紁羑 韰頯餩 鰩鷎 圢帄氕 煘煓瑐 熩熝犚 躎轛 壿 藚藦藞 蜦賕踃 豅鑢鑗 垌壴 蒛 豥 湴涬 蛶觢豥 瀁瀎瀊 溹溦滜, 筡絼綒 鳻嶬幧 獫瘯皻 魦魵 滆 虰豖阹 忷扴汥 慛慖 滈, 巠帎 鳱 偢偣唲 秎穾籺 沎牣 胾臷菨 樛槷殦 姌弣抶 塝, 嘽 楋歅 莃荶衒 蛚袲褁 鈁陾靰
 								</textarea>
+								<label class="checkbox">
+									<input type="checkbox"> Check me out
+								</label>
 								<div>
 								<button type="submit" class="btn btn-primary">Save</button>
 								</div>

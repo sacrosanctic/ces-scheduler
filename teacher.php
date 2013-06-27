@@ -30,8 +30,21 @@
 					<div class="nav-collapse collapse">
 						<ul class="nav">
 							<li><a href="index.php">Home</a></li>
-							<li><a href="#">Student</a></li>
-							<li><a href="teacher.php">Teacher</a></li>
+							<li><a href="studentlist.php">Student</a></li>
+							<li><a href="teacherlist.php">Teacher</a></li>
+							<li><a href="checkin.php">Check-In</a></li>
+							<li class="dropdown">
+								<a href="#" id="dLabel" class="dropdown-toggle" role="button" data-toggle="dropdown">
+									Report
+									<b class="caret"></b>
+								</a>
+								<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+									<li role="presentation"><a href="finance.php">Finance Report</a></li>
+									<li role="presentation"><a href="bookkeep.php">Monthly Bookkeeping</a></li>
+								</ul>
+							</li>
+						</ul>
+						<ul class="nav pull-right">
 							<li><a href="#">Settings</a></li>
 						</ul>
 					</div><!--/.nav-collapse -->

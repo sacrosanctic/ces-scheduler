@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Index</title>
+		<title>Page not found</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- Le styles -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
@@ -53,8 +53,8 @@
 		</div>
 		<div class="container"> <!-- container -->
 			
-		<h1>Welcome</h1>
-	
+		<h1>Page not found.</h1>
+			
 		</div> <!-- /container -->
 		<script src="js/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>

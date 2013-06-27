@@ -30,8 +30,21 @@
 					<div class="nav-collapse collapse">
 						<ul class="nav">
 							<li><a href="index.php">Home</a></li>
-							<li><a href="#">Student</a></li>
-							<li><a href="teacher.php">Teacher</a></li>
+							<li><a href="studentlist.php">Student</a></li>
+							<li><a href="teacherlist.php">Teacher</a></li>
+							<li><a href="checkin.php">Check-In</a></li>
+							<li class="dropdown">
+								<a href="#" id="dLabel" class="dropdown-toggle" role="button" data-toggle="dropdown">
+									Report
+									<b class="caret"></b>
+								</a>
+								<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+									<li role="presentation"><a href="finance.php">Finance Report</a></li>
+									<li role="presentation"><a href="bookkeep.php">Monthly Bookkeeping</a></li>
+								</ul>
+							</li>
+						</ul>
+						<ul class="nav pull-right">
 							<li><a href="#">Settings</a></li>
 						</ul>
 					</div><!--/.nav-collapse -->
@@ -87,19 +100,6 @@
 		</div> <!-- /container -->
 		<script src="js/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
-		<script>
-					function addContact() {
-				var newIn = '<tr><td><select class="width:140px;"><option></option><option>friend</option><option>mom</option><option>self</option><option>dad</option></select></td><td><select class="width:140px;"><option></option><option>cell phone</option><option>home phone</option><option>email</option><option>address</option></select></td><td><input type="text" value=""></td><td><a href="#" onClick="removeFormField(this)"><i class="icon-remove"></i></a></td></tr>';
-				$("#contact tbody").prepend(newIn);
-			}
-			function addFee() {
-				var newIn = '<tr><td><select class="width:140px;"><option>private Lession</option><option>group lession</option><option>special</option></select></td><td><input type="text" value=""></td><td><a href="#" onClick="removeFormField(this)"><i class="icon-remove"></i></a></td></tr>';
-				$("#fee tbody").prepend(newIn);
-			}
-			function removeFormField(e) {
-				$(e).parent().parent().remove();
-			}
-
-	</script>
+		<script></script>
 	</body>
 </html>

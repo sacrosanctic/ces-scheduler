@@ -29,6 +29,10 @@
 			"{{FOOTERJS}}" => (isset($footerjs) ? $footerjs : "")
 		);
 
+		unset($title);
+		unset($content);
+		unset($footerjs);
+
 		//replace placeholder
 		$content = strtr($template, $trans);
 		

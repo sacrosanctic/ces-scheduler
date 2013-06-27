@@ -1,0 +1,10 @@
+things to work on
+
+check in page (with calendar look up)
+lesson creater page
+	lesson pages
+	class page (classes are group of lessons)
+	subject page (subjects are types of lessons)
+student page
+finance page
+settings page
