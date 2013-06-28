@@ -11,7 +11,7 @@
 					</ul>
 					<div id="myTabContent" class="tab-content">
 						<div class="tab-pane active" id="myTab1">
-							<form id="teacherform" action="/ces-scheduler/template/template-gen.php" method="post">
+							<form id="teacherform" action="" method="post">
 								<label for="name">Name</label>
 								<input type="text" value="Daphne">
 								<label>Education</label>

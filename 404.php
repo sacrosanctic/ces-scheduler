@@ -1,5 +1,8 @@
+<?php
+	include_once("lang/lang-en.php");
+?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<?php echo $lang['HTML_LANG'];?>">
 	<head>
 		<meta charset="utf-8">
 		<title>Page not found</title>

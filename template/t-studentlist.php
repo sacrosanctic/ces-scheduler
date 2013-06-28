@@ -7,7 +7,7 @@
 					<form class="form-inline" action="student.php">
 						<div class="input-append">
 							<input type="text" id="typeahead" autocomplete="off" class="span3">
-							<a href="#" class="btn"><i class="icon-pencil"></i>Edit</a>
+							<button type="submit" class="btn"><i class="icon-pencil"></i>Edit</button>
 						</div>
 						<a href="#" class="btn"><i class="icon-user"></i> <strong>New</strong></a>
 					</form>

@@ -2,39 +2,42 @@
 	$title = 'Check In';
 	$content = '
 			<h1>Check-In <small>June 30th, 2013 6:15pm</small></h1>
-			<div class="btn-toolbar">
-				<a href="#" class="btn">Filter</a>
-				<a href="#" class="btn">Clear</a>
-			</div>
-			<div class="controls controls-row">
-				<select multiple="multiple">
-					<option selected="selected">(All)</option>
-					<option>Daphne</option>
-					<option>Donald</option>
-					<option>Mulie</option>
-				</select>
-				<select multiple="multiple">
-					<option selected="selected">(All)</option>
-					<option>English</option>
-					<option>Music</option>
-					<option>Chinese</option>
-					<option>Math</option>
-				</select>
-				<select multiple="multiple">
-					<option selected="selected">(All)</option>
-					<option>Private Lesson</option>
-					<option>Group Lesson</option>
-				</select>
-				<select multiple="multiple">
-					<option selected="selected">(All)</option>
-					<option>Paid</option>
-					<option>Unpaid</option>
-				</select>
-			</div>
-			<div class="controls controls-row">
-				<input type="date" value="2003-06-30">
-				<input type="date" value="2003-06-30">
-			</div>
+			<form class="well">
+				<div class="btn-toolbar">
+					<a href="lessonnew.php" class="btn btn-primary">New Classes</a>
+					<a href="#" class="btn">Filter</a>
+					<a href="lessonnew.php" class="btn">Clear</a>
+				</div>
+				<div class="controls controls-row">
+					<select multiple="multiple">
+						<option selected="selected">(All)</option>
+						<option>Daphne</option>
+						<option>Donald</option>
+						<option>Mulie</option>
+					</select>
+					<select multiple="multiple">
+						<option selected="selected">(All)</option>
+						<option>English</option>
+						<option>Music</option>
+						<option>Chinese</option>
+						<option>Math</option>
+					</select>
+					<select multiple="multiple">
+						<option selected="selected">(All)</option>
+						<option>Private Lesson</option>
+						<option>Group Lesson</option>
+					</select>
+					<select multiple="multiple">
+						<option selected="selected">(All)</option>
+						<option>Paid</option>
+						<option>Unpaid</option>
+					</select>
+				</div>
+				<div class="controls controls-row">
+					<input type="date" value="2003-06-30">
+					<input type="date" value="2003-06-30">
+				</div>
+			</form>
 			<table class="table">
 				<thead>
 					<tr>
@@ -88,7 +91,7 @@
 						<td>Bob</td>
 						<td>
 							<a href="#" onClick="$(this).parent().parent().removeClass(\'warning\').addClass(\'success\');">Check In</a> |
-							<a href="#">Change</a>
+							<a href="lessonedit.php">Change</a>
 						</td>
 					</tr>
 				</tbody>

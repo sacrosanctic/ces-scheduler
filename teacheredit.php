@@ -1,5 +1,8 @@
+<?php
+	include_once("lang/lang-en.php");
+?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<?php echo $lang['HTML_LANG'];?>">
 	<head>
 		<meta charset="utf-8">
 		<title>Teacher Edit</title>
@@ -63,7 +66,7 @@
 					</ul>
 					<div id="myTabContent" class="tab-content">
 						<div class="tab-pane active" id="myTab1">
-							<form id="teacherform" action="/ces-scheduler/template/template-gen.php" method="post">
+							<form id="teacherform" action="" method="post">
 								<label for="name">Name</label>
 								<input type="text" value="Daphne">
 								<label>Education</label>

@@ -1,5 +1,8 @@
+<?php
+	include_once("lang/lang-en.php");
+?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<?php echo $lang['HTML_LANG'];?>">
 	<head>
 		<meta charset="utf-8">
 		<title>Student List</title>
@@ -59,7 +62,7 @@
 					<form class="form-inline" action="student.php">
 						<div class="input-append">
 							<input type="text" id="typeahead" autocomplete="off" class="span3">
-							<a href="#" class="btn"><i class="icon-pencil"></i>Edit</a>
+							<button type="submit" class="btn"><i class="icon-pencil"></i>Edit</button>
 						</div>
 						<a href="#" class="btn"><i class="icon-user"></i> <strong>New</strong></a>
 					</form>
